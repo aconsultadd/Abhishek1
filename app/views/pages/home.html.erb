@@ -1,9 +1,25 @@
 
 <div class ="jumbotron">
     <h1 align="center"><font color='red'>Welcome to my Application</font></h1>
-    <p align="center"><font color='red'>Sign up </font><a href ='http://www.facebook.com'><button type="button">here </button></a></p>
-</div>
+    <p align="center"><%= link_to "Signup",new_user_registration_path ,class: "btn btn-primary" %></p>
+    
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <P align="center"><%= link_to "Login",new_user_session_path ,class: "btn btn-primary" %></p>
+</div>
 <%= link_to "About Us", about_path %>
 
-<%= link_to "Services", services_path %>

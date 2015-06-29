@@ -1,5 +1,14 @@
 
 $body-bg: #34495e;
-$navbar-default-bg:#bdc3c7;
+$navbar-default-bg:white;
 $brand-primary:#2980b9;
 @import 'bootstrap';
+
+
+.center {
+text-align: center;
+}
+
+.navbar-brand {
+font-weight: bold;
+}
