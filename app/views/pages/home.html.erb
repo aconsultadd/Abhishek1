@@ -1,6 +1,10 @@
 
 <div class ="jumbotron">
     <h1 align="center"><font color='red'>Welcome to my Application</font></h1>
+
+   <% if user_signed_in? %>
+     <p align='center'># do something </p>
+    <% else %>
     <p align="center"><%= link_to "Signup",new_user_registration_path ,class: "btn btn-primary" %></p>
     
 
@@ -20,6 +24,8 @@
 
 
     <P align="center"><%= link_to "Login",new_user_session_path ,class: "btn btn-primary" %></p>
+
+    <% end %>	
 </div>
 <%= link_to "About Us", about_path %>
 
