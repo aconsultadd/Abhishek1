@@ -1,4 +1,11 @@
 Abhishek::Application.routes.draw do
+  resources :pins
+
+
+  get "users/index"
+
+  get "users/show"
+
   devise_for :users
 
   root :to => 'pages#home'

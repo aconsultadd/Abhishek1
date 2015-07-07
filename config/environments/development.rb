@@ -37,4 +37,5 @@ Abhishek::Application.configure do
 
   #required for heroku
   config.action_mailer.default_url_option = { :host =>'localhost:3000' }
+  
 end
