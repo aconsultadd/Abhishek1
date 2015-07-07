@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th style=color:red>Description</th>
+    <th style=color:red>User_id</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,6 +12,7 @@
 <% @pins.each do |pin| %>
   <tr>
     <td style=color:white><%= pin.description %></td>
+    <td style=color:white><%= pin.user_id %></td>
     <td><%= link_to 'Show', pin %></td>
     <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
     <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
